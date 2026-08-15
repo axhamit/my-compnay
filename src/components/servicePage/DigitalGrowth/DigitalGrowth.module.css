@@ -1,0 +1,688 @@
+/* src/components/DigitalGrowth/DigitalGrowth.module.css */
+
+.digitalGrowth {
+  position: relative;
+  padding: 5rem 2rem;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .digitalGrowth {
+    background: #0f172a;
+  }
+}
+
+/* Background Elements */
+.bgGlow1 {
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.bgGlow2 {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.02) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.bgGrid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(14, 165, 233, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bgGrid {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  }
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 540px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 1rem;
+  background: rgba(14, 165, 233, 0.08);
+  color: #0ea5e9;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  width: fit-content;
+  border: 1px solid rgba(14, 165, 233, 0.12);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  background: #0ea5e9;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.6); }
+}
+
+.heading {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .heading {
+    color: #f8fafc;
+  }
+}
+
+.headingHighlight {
+  color: #0ea5e9;
+}
+
+.description {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+@media (prefers-color-scheme: dark) {
+  .description {
+    color: #94a3b8;
+  }
+}
+
+/* Growth Tree */
+.growthTree {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.treeBranch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.branchHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.branchDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.branchTitle {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .branchTitle {
+    color: #f8fafc;
+  }
+}
+
+.branchItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.125rem;
+  padding-left: 1.25rem;
+}
+
+.branchItem {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .branchItem {
+    color: #94a3b8;
+  }
+}
+
+.branchSeparator {
+  color: #cbd5e1;
+  margin: 0 0.125rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .branchSeparator {
+    color: #475569;
+  }
+}
+
+/* CTA Button */
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.875rem 2rem;
+  background: #0f172a;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  width: fit-content;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.2);
+  background: #1e293b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ctaButton {
+    background: #0ea5e9;
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.25);
+  }
+  .ctaButton:hover {
+    background: #0284c7;
+    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.35);
+  }
+}
+
+/* Right Visual */
+.visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualContainer {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+}
+
+/* Growth Dashboard */
+.dashboardCard {
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .dashboardCard {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.dashboardTitle {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dashboardTitle {
+    color: #f8fafc;
+  }
+}
+
+.dashboardDate {
+  font-size: 0.625rem;
+  color: #94a3b8;
+}
+
+/* Dashboard Metrics */
+.dashboardMetrics {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.75rem 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dashboardMetrics {
+    border-top-color: #334155;
+    border-bottom-color: #334155;
+  }
+}
+
+.metricItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metricValue {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .metricValue {
+    color: #f8fafc;
+  }
+}
+
+.metricValue:first-child {
+  color: #22c55e;
+}
+
+.metricLabel {
+  font-size: 0.625rem;
+  color: #94a3b8;
+}
+
+.metricDivider {
+  width: 1px;
+  height: 2rem;
+  background: #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .metricDivider {
+    background: #334155;
+  }
+}
+
+/* Dashboard Chart */
+.dashboardChart {
+  padding: 0.5rem 0;
+}
+
+.chartContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+  height: 60px;
+}
+
+.chartBar {
+  flex: 1;
+  background: #0ea5e9;
+  border-radius: 3px 3px 0 0;
+  min-height: 6px;
+  transition: height 0.3s ease;
+}
+
+.chartBar:nth-child(2) { background: #3b82f6; }
+.chartBar:nth-child(4) { background: #8b5cf6; }
+.chartBar:nth-child(6) { background: #0ea5e9; }
+.chartBar:nth-child(8) { background: #3b82f6; }
+.chartBar:nth-child(10) { background: #8b5cf6; }
+
+.chartLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.375rem;
+}
+
+.chartLabels span {
+  font-size: 0.5rem;
+  color: #94a3b8;
+  flex: 1;
+  text-align: center;
+}
+
+/* Technology Section */
+.techSection {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .techSection {
+    background: #1e293b;
+    border-color: #334155;
+  }
+}
+
+.techLabel {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.techItem {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .techItem {
+    background: #0f172a;
+    border-color: #334155;
+  }
+}
+
+.techIcon {
+  font-size: 0.75rem;
+}
+
+.techName {
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .techName {
+    color: #f8fafc;
+  }
+}
+
+/* Floating Badges */
+.floatingBadge1,
+.floatingBadge2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  z-index: 4;
+}
+
+@media (prefers-color-scheme: dark) {
+  .floatingBadge1,
+  .floatingBadge2 {
+    background: rgba(30, 41, 59, 0.92);
+    border-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.floatingBadge1 {
+  top: 5%;
+  right: -10%;
+}
+
+.floatingBadge2 {
+  bottom: 15%;
+  left: -12%;
+}
+
+.badgeIcon {
+  font-size: 0.875rem;
+}
+
+.badgeText {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badgeText {
+    color: #f8fafc;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    gap: 3rem;
+  }
+
+  .floatingBadge1 {
+    right: -5%;
+  }
+
+  .floatingBadge2 {
+    left: -5%;
+  }
+
+  .techGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .digitalGrowth {
+    padding: 4rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .growthTree {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+  }
+
+  .branchTitle {
+    font-size: 0.75rem;
+  }
+
+  .branchItem {
+    font-size: 0.6875rem;
+  }
+
+  .visualContainer {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .dashboardCard {
+    padding: 1rem;
+  }
+
+  .metricValue {
+    font-size: 0.875rem;
+  }
+
+  .floatingBadge1,
+  .floatingBadge2 {
+    display: none;
+  }
+
+  .techGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ctaButton {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .digitalGrowth {
+    padding: 3rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .badge {
+    font-size: 0.6875rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .description {
+    font-size: 0.9375rem;
+  }
+
+  .growthTree {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .branchItems {
+    padding-left: 1rem;
+  }
+
+  .branchTitle {
+    font-size: 0.6875rem;
+  }
+
+  .branchItem {
+    font-size: 0.625rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .visualContainer {
+    max-width: 100%;
+  }
+
+  .dashboardCard {
+    border-radius: 12px;
+    padding: 0.75rem;
+  }
+
+  .dashboardTitle {
+    font-size: 0.75rem;
+  }
+
+  .dashboardMetrics {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .metricDivider {
+    width: 2rem;
+    height: 1px;
+  }
+
+  .metricValue {
+    font-size: 0.8125rem;
+  }
+
+  .chartContainer {
+    height: 45px;
+  }
+
+  .chartLabels span {
+    font-size: 0.4375rem;
+  }
+
+  .techSection {
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+  }
+
+  .techGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.375rem;
+  }
+
+  .techItem {
+    padding: 0.1875rem 0.375rem;
+  }
+
+  .techIcon {
+    font-size: 0.625rem;
+  }
+
+  .techName {
+    font-size: 0.5625rem;
+  }
+}

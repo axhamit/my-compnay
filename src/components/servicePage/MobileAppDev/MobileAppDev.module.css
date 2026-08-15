@@ -1,0 +1,842 @@
+/* src/components/MobileAppDev/MobileAppDev.module.css */
+
+.mobileDev {
+  position: relative;
+  padding: 5rem 2rem;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mobileDev {
+    background: #0f172a;
+  }
+}
+
+/* Background Gradient */
+.bgGradient {
+  position: absolute;
+  top: -30%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 540px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 1rem;
+  background: rgba(14, 165, 233, 0.08);
+  color: #0ea5e9;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  width: fit-content;
+  border: 1px solid rgba(14, 165, 233, 0.12);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  background: #0ea5e9;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.6); }
+}
+
+.heading {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .heading {
+    color: #f8fafc;
+  }
+}
+
+.headingHighlight {
+  color: #0ea5e9;
+}
+
+.description {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+@media (prefers-color-scheme: dark) {
+  .description {
+    color: #94a3b8;
+  }
+}
+
+/* Capabilities */
+.capabilities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.capabilityItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.capabilityDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #0ea5e9;
+  flex-shrink: 0;
+}
+
+.capabilityText {
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+@media (prefers-color-scheme: dark) {
+  .capabilityText {
+    color: #94a3b8;
+  }
+}
+
+/* Technology Section */
+.techSection {
+  padding-top: 0.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .techSection {
+    border-top-color: #334155;
+  }
+}
+
+.techLabel {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.techTag {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .techTag {
+    color: #f8fafc;
+  }
+}
+
+.techSeparator {
+  color: #cbd5e1;
+  margin: 0 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .techSeparator {
+    color: #475569;
+  }
+}
+
+/* CTA Button */
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.875rem 2rem;
+  background: #0f172a;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  width: fit-content;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.2);
+  background: #1e293b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ctaButton {
+    background: #0ea5e9;
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.25);
+  }
+  .ctaButton:hover {
+    background: #0284c7;
+    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.35);
+  }
+}
+
+/* Right Visual - Phone Mockups */
+.visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phoneContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 500px;
+}
+
+/* Phone Frame */
+.phoneMain,
+.phoneSecondary {
+  position: absolute;
+}
+
+.phoneMain {
+  top: 0;
+  right: 0;
+  width: 65%;
+  z-index: 2;
+}
+
+.phoneSecondary {
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  z-index: 1;
+}
+
+.phoneFrame {
+  background: #0f172a;
+  border-radius: 28px;
+  padding: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .phoneFrame {
+    background: #1e293b;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.phoneNotch {
+  width: 40%;
+  height: 16px;
+  background: #0f172a;
+  border-radius: 0 0 12px 12px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .phoneNotch {
+    background: #1e293b;
+  }
+}
+
+.phoneScreen {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 320px;
+  position: relative;
+}
+
+@media (prefers-color-scheme: dark) {
+  .phoneScreen {
+    background: #0f172a;
+  }
+}
+
+/* App UI Content */
+.appHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0.75rem 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  .appHeader {
+    border-bottom-color: #1e293b;
+  }
+}
+
+.appHeaderLeft {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.appBack {
+  width: 20px;
+  height: 20px;
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .appBack {
+    background: #334155;
+  }
+}
+
+.appHeaderRight {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.appMore {
+  width: 16px;
+  height: 16px;
+  background: #e2e8f0;
+  border-radius: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .appMore {
+    background: #334155;
+  }
+}
+
+.appContent {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.appProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.appAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+  flex-shrink: 0;
+}
+
+.appName {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.appNameLine {
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 3px;
+}
+
+.appNameLine:first-child { width: 60%; }
+.appNameLine:last-child { width: 40%; }
+
+@media (prefers-color-scheme: dark) {
+  .appNameLine {
+    background: #334155;
+  }
+}
+
+.appCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.appCard {
+  padding: 0.5rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .appCard {
+    background: #1e293b;
+    border-color: #334155;
+  }
+}
+
+.appCardIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: #0ea5e9;
+  flex-shrink: 0;
+}
+
+.appCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  flex: 1;
+}
+
+.appCardLine {
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+}
+
+.appCardLine:first-child { width: 70%; }
+.appCardLine:last-child { width: 50%; }
+
+@media (prefers-color-scheme: dark) {
+  .appCardLine {
+    background: #475569;
+  }
+}
+
+.appChart {
+  padding: 0.5rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .appChart {
+    background: #1e293b;
+    border-color: #334155;
+  }
+}
+
+.appChartBars {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+  height: 32px;
+}
+
+.appChartBar {
+  flex: 1;
+  background: #0ea5e9;
+  border-radius: 2px 2px 0 0;
+  min-height: 4px;
+}
+
+.appChartBar:nth-child(2) { background: #3b82f6; }
+.appChartBar:nth-child(4) { background: #8b5cf6; }
+
+/* App List */
+.appList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.appListItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.5rem;
+  background: #f8fafc;
+  border-radius: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .appListItem {
+    background: #1e293b;
+  }
+}
+
+.appListIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #0ea5e9;
+  flex-shrink: 0;
+}
+
+.appListText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  flex: 1;
+}
+
+.appListLine {
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+}
+
+.appListLine:first-child { width: 70%; }
+.appListLine:last-child { width: 50%; }
+
+@media (prefers-color-scheme: dark) {
+  .appListLine {
+    background: #475569;
+  }
+}
+
+.appBottomNav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  .appBottomNav {
+    border-top-color: #1e293b;
+  }
+}
+
+.appNavItem {
+  width: 16px;
+  height: 16px;
+  background: #e2e8f0;
+  border-radius: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .appNavItem {
+    background: #334155;
+  }
+}
+
+.appNavItem:nth-child(2) { background: #0ea5e9; }
+
+/* Floating Badges */
+.floatingBadge1,
+.floatingBadge2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  z-index: 4;
+}
+
+@media (prefers-color-scheme: dark) {
+  .floatingBadge1,
+  .floatingBadge2 {
+    background: rgba(30, 41, 59, 0.92);
+    border-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.floatingBadge1 {
+  top: 5%;
+  left: -5%;
+}
+
+.floatingBadge2 {
+  bottom: 20%;
+  right: -8%;
+}
+
+.badgeIcon {
+  font-size: 0.875rem;
+}
+
+.badgeText {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badgeText {
+    color: #f8fafc;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    gap: 3rem;
+  }
+
+  .phoneContainer {
+    min-height: 420px;
+  }
+
+  .floatingBadge1 {
+    left: 0;
+  }
+
+  .floatingBadge2 {
+    right: -3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileDev {
+    padding: 4rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .capabilities {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .capabilityText {
+    font-size: 0.8125rem;
+  }
+
+  .phoneContainer {
+    min-height: 380px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .phoneMain {
+    width: 60%;
+  }
+
+  .phoneSecondary {
+    width: 50%;
+  }
+
+  .phoneScreen {
+    min-height: 260px;
+  }
+
+  .floatingBadge1,
+  .floatingBadge2 {
+    display: none;
+  }
+
+  .ctaButton {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobileDev {
+    padding: 3rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .badge {
+    font-size: 0.6875rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .description {
+    font-size: 0.9375rem;
+  }
+
+  .capabilities {
+    grid-template-columns: 1fr;
+    gap: 0.375rem;
+  }
+
+  .capabilityText {
+    font-size: 0.75rem;
+  }
+
+  .techTag {
+    font-size: 0.75rem;
+  }
+
+  .techSeparator {
+    margin: 0 0.125rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .phoneContainer {
+    min-height: 320px;
+    max-width: 320px;
+  }
+
+  .phoneMain {
+    width: 58%;
+  }
+
+  .phoneSecondary {
+    width: 48%;
+  }
+
+  .phoneFrame {
+    border-radius: 20px;
+    padding: 6px;
+  }
+
+  .phoneNotch {
+    height: 12px;
+  }
+
+  .phoneScreen {
+    border-radius: 14px;
+    min-height: 220px;
+  }
+
+  .appContent {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .appAvatar {
+    width: 24px;
+    height: 24px;
+  }
+
+  .appNameLine {
+    height: 4px;
+  }
+
+  .appCards {
+    gap: 0.375rem;
+  }
+
+  .appCard {
+    padding: 0.375rem;
+  }
+
+  .appCardIcon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .appCardLine {
+    height: 3px;
+  }
+
+  .appChart {
+    padding: 0.375rem;
+  }
+
+  .appChartBars {
+    height: 24px;
+    gap: 0.125rem;
+  }
+
+  .appBottomNav {
+    padding-top: 0.375rem;
+  }
+
+  .appNavItem {
+    width: 12px;
+    height: 12px;
+  }
+
+  .appHeader {
+    padding: 0.5rem 0.5rem 0.375rem;
+  }
+
+  .appBack {
+    width: 16px;
+    height: 16px;
+  }
+
+  .appMore {
+    width: 12px;
+    height: 12px;
+  }
+
+  .appList {
+    gap: 0.375rem;
+  }
+
+  .appListItem {
+    padding: 0.25rem 0.375rem;
+  }
+
+  .appListIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .appListLine {
+    height: 3px;
+  }
+}

@@ -1,0 +1,144 @@
+/* src/components/WorkCTA/WorkCTA.module.css */
+
+.cta {
+  position: relative;
+  padding: 5rem 2rem;
+  background: #f8fafc;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cta {
+    background: #0f172a;
+  }
+}
+
+/* Subtle background */
+.cta::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cta::before {
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.smallText {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0ea5e9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.heading {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .heading {
+    color: #f8fafc;
+  }
+}
+
+.headingHighlight {
+  color: #0ea5e9;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.875rem 2.5rem;
+  background: #0f172a;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  margin-top: 0.5rem;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.2);
+  background: #1e293b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ctaButton {
+    background: #0ea5e9;
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.25);
+  }
+  .ctaButton:hover {
+    background: #0284c7;
+    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.35);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .heading {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+  }
+
+  .ctaButton {
+    padding: 0.75rem 2rem;
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 3rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .smallText {
+    font-size: 0.75rem;
+  }
+
+  .ctaButton {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.875rem;
+    width: 100%;
+    justify-content: center;
+  }
+}

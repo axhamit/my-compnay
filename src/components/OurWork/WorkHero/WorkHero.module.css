@@ -1,0 +1,256 @@
+/* src/components/WorkHero/WorkHero.module.css */
+
+.workHero {
+  position: relative;
+  padding: 8rem 2rem 4rem;
+  background: #ffffff;
+  overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .workHero {
+    background: #0f172a;
+  }
+}
+
+/* Background Orb */
+.bgOrb {
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.04) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bgOrb {
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 1rem;
+  background: rgba(14, 165, 233, 0.08);
+  color: #0ea5e9;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  width: fit-content;
+  border: 1px solid rgba(14, 165, 233, 0.12);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  background: #0ea5e9;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.6); }
+}
+
+/* Heading */
+.heading {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .heading {
+    color: #f8fafc;
+  }
+}
+
+.headingHighlight {
+  display: inline-block;
+  background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Description */
+.description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #475569;
+  max-width: 520px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .description {
+    color: #94a3b8;
+  }
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .stats {
+    border-top-color: #334155;
+  }
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.statNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .statNumber {
+    color: #f8fafc;
+  }
+}
+
+.statLabel {
+  font-size: 0.8125rem;
+  color: #64748b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .statLabel {
+    color: #94a3b8;
+  }
+}
+
+.statDivider {
+  width: 1px;
+  height: 2.5rem;
+  background: #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .statDivider {
+    background: #334155;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .workHero {
+    padding: 6rem 1.5rem 3rem;
+    min-height: auto;
+  }
+
+  .heading {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .stats {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .statNumber {
+    font-size: 1.25rem;
+  }
+
+  .statLabel {
+    font-size: 0.75rem;
+  }
+
+  .statDivider {
+    height: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .workHero {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 0.9375rem;
+  }
+
+  .badge {
+    font-size: 0.6875rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .statDivider {
+    display: none;
+  }
+
+  .statItem {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: baseline;
+  }
+
+  .statNumber {
+    font-size: 1.125rem;
+  }
+
+  .statLabel {
+    font-size: 0.8125rem;
+  }
+
+  .bgOrb {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -50px;
+  }
+}

@@ -1,0 +1,364 @@
+/* src/components/Vision/Vision.module.css */
+
+.vision {
+  position: relative;
+  padding: 6rem 2rem;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .vision {
+    background: #0f172a;
+  }
+}
+
+/* Background */
+.background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.orb1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  left: -50px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.04) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+}
+
+.orb2 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  bottom: -80px;
+  right: -50px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.03) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+}
+
+.gridPattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(14, 165, 233, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .gridPattern {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid Layout - Side by Side */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left: Main Content */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 1rem;
+  background: rgba(14, 165, 233, 0.06);
+  color: #0ea5e9;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border: 1px solid rgba(14, 165, 233, 0.08);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+@media (prefers-color-scheme: dark) {
+  .label {
+    background: rgba(14, 165, 233, 0.08);
+    border-color: rgba(14, 165, 233, 0.12);
+  }
+}
+
+.labelDot {
+  width: 6px;
+  height: 6px;
+  background: #0ea5e9;
+  border-radius: 50%;
+  animation: pulse-dot-vision 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-dot-vision {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.2; transform: scale(0.6); }
+}
+
+.statement {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .statement {
+    color: #f8fafc;
+  }
+}
+
+/* Changed from Purple to Blue gradient */
+.statementHighlight {
+  display: inline-block;
+  background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Changed from Purple to Blue gradient */
+.decorativeLine {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #0ea5e9, transparent);
+  border-radius: 2px;
+}
+
+/* Right: Vision Points */
+.pointsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pointCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.pointCard:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+@media (prefers-color-scheme: dark) {
+  .pointCard {
+    background: #1e293b;
+    border-color: #334155;
+  }
+  .pointCard:hover {
+    background: #263548;
+    border-color: #475569;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Changed from Purple to Blue */
+.pointIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(14, 165, 233, 0.08);
+  flex-shrink: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pointIconWrapper {
+    background: rgba(14, 165, 233, 0.12);
+  }
+}
+
+.pointIcon {
+  font-size: 1.25rem;
+}
+
+.pointContent {
+  flex: 1;
+}
+
+.pointTitle {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 0.125rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pointTitle {
+    color: #f8fafc;
+  }
+}
+
+.pointDescription {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: #475569;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .pointDescription {
+    color: #94a3b8;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    gap: 3rem;
+  }
+
+  .statement {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .vision {
+    padding: 4rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .mainContent {
+    align-items: center;
+    text-align: center;
+  }
+
+  .label {
+    align-self: center;
+  }
+
+  .decorativeLine {
+    align-self: center;
+  }
+
+  .statement {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+  }
+
+  .pointsContainer {
+    gap: 0.75rem;
+  }
+
+  .pointCard {
+    padding: 0.875rem 1rem;
+  }
+
+  .pointIconWrapper {
+    width: 36px;
+    height: 36px;
+  }
+
+  .pointIcon {
+    font-size: 1rem;
+  }
+
+  .pointTitle {
+    font-size: 0.875rem;
+  }
+
+  .pointDescription {
+    font-size: 0.75rem;
+  }
+
+  .orb1 {
+    width: 250px;
+    height: 250px;
+    top: -80px;
+    left: -30px;
+  }
+
+  .orb2 {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    right: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision {
+    padding: 3rem 1rem;
+  }
+
+  .grid {
+    gap: 2rem;
+  }
+
+  .statement {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    font-size: 0.6875rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .pointCard {
+    padding: 0.75rem;
+    border-radius: 10px;
+  }
+
+  .pointIconWrapper {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  .pointIcon {
+    font-size: 0.875rem;
+  }
+
+  .pointTitle {
+    font-size: 0.8125rem;
+  }
+
+  .pointDescription {
+    font-size: 0.6875rem;
+  }
+
+  .decorativeLine {
+    width: 40px;
+    height: 2px;
+  }
+}

@@ -1,0 +1,515 @@
+/* src/components/HowWeWork/HowWeWork.module.css */
+
+.howWeWork {
+  position: relative;
+  padding: 5rem 2rem;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .howWeWork {
+    background: #0f172a;
+  }
+}
+
+/* Subtle background */
+.howWeWork::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .howWeWork::before {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 1rem;
+  background: #f1f5f9;
+  color: #475569;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  border: 1px solid #e2e8f0;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge {
+    background: #1e293b;
+    color: #94a3b8;
+    border-color: #334155;
+  }
+}
+
+.heading {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .heading {
+    color: #f8fafc;
+  }
+}
+
+.headingHighlight {
+  color: #0ea5e9;
+}
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-top: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .subtitle {
+    color: #94a3b8;
+  }
+}
+
+/* Roadmap */
+.roadmap {
+  position: relative;
+  padding: 1rem 0;
+}
+
+/* Progress Track */
+.progressTrack {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: #e2e8f0;
+  border-radius: 1px;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .progressTrack {
+    background: #334155;
+  }
+}
+
+.progressFill {
+  height: 100%;
+  background: #0ea5e9;
+  border-radius: 1px;
+  width: 0%;
+  max-width: 100%;
+}
+
+/* Steps Container */
+.stepsContainer {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+/* Step Wrapper */
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Step Node */
+.stepNode {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.nodeCircle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: default;
+  position: relative;
+  z-index: 2;
+}
+
+.nodeCircle:hover {
+  border-color: #0ea5e9;
+  transform: scale(1.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  .nodeCircle {
+    background: #1e293b;
+    border-color: #475569;
+  }
+  .nodeCircle:hover {
+    border-color: #0ea5e9;
+  }
+}
+
+.nodeNumber {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.02em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nodeNumber {
+    color: #94a3b8;
+  }
+}
+
+/* Node Connector */
+.nodeConnector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.connectorLine {
+  width: 1px;
+  height: 20px;
+  background: #e2e8f0;
+  min-height: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .connectorLine {
+    background: #334155;
+  }
+}
+
+.connectorArrow {
+  font-size: 0.625rem;
+  color: #94a3b8;
+  margin-top: -0.125rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .connectorArrow {
+    color: #64748b;
+  }
+}
+
+/* Step Content */
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0.25rem;
+}
+
+.stepTitle {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .stepTitle {
+    color: #f8fafc;
+  }
+}
+
+.stepDescription {
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  color: #64748b;
+  margin: 0;
+  max-width: 100px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .stepDescription {
+    color: #94a3b8;
+  }
+}
+
+/* Progress Indicator */
+.progressIndicator {
+  margin-top: 2.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .progressIndicator {
+    border-top-color: #334155;
+  }
+}
+
+.indicatorTrack {
+  display: flex;
+  gap: 0.25rem;
+  height: 3px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .indicatorTrack {
+    background: #334155;
+  }
+}
+
+.indicatorSegment {
+  flex: 1;
+  background: #0ea5e9;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.indicatorLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.indicatorLabel {
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: #94a3b8;
+  flex: 1;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .indicatorLabel {
+    color: #64748b;
+  }
+}
+
+/* CTA */
+.ctaWrapper {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background: #f1f5f9;
+  color: #0f172a;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ctaButton {
+    background: #1e293b;
+    color: #f8fafc;
+    border-color: #334155;
+  }
+  .ctaButton:hover {
+    background: #f8fafc;
+    color: #0f172a;
+    border-color: #f8fafc;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .stepsContainer {
+    gap: 0.25rem;
+  }
+
+  .stepDescription {
+    max-width: 80px;
+    font-size: 0.625rem;
+  }
+
+  .nodeCircle {
+    width: 38px;
+    height: 38px;
+  }
+
+  .nodeNumber {
+    font-size: 0.625rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .howWeWork {
+    padding: 4rem 1.5rem;
+  }
+
+  .stepsContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .stepWrapper:nth-child(4),
+  .stepWrapper:nth-child(5) {
+    margin-top: 0.5rem;
+  }
+
+  .stepWrapper:nth-child(4) {
+    grid-column: 1 / 2;
+  }
+
+  .stepWrapper:nth-child(5) {
+    grid-column: 2 / 3;
+  }
+
+  .nodeConnector {
+    display: none;
+  }
+
+  .stepDescription {
+    max-width: 100%;
+    font-size: 0.625rem;
+  }
+
+  .stepTitle {
+    font-size: 0.75rem;
+  }
+
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .progressTrack {
+    display: none;
+  }
+
+  .progressIndicator {
+    margin-top: 2rem;
+  }
+
+  .nodeCircle {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .howWeWork {
+    padding: 3rem 1rem;
+  }
+
+  .stepsContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .stepWrapper {
+    padding: 0.25rem;
+  }
+
+  .stepWrapper:nth-child(5) {
+    grid-column: 1 / 3;
+  }
+
+  .nodeCircle {
+    width: 32px;
+    height: 32px;
+    border-width: 1.5px;
+  }
+
+  .nodeNumber {
+    font-size: 0.5rem;
+  }
+
+  .stepTitle {
+    font-size: 0.6875rem;
+  }
+
+  .stepDescription {
+    font-size: 0.5625rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .badge {
+    font-size: 0.6875rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    justify-content: center;
+    padding: 0.625rem 1.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .indicatorLabel {
+    font-size: 0.5rem;
+  }
+
+  .progressIndicator {
+    margin-top: 1.5rem;
+    padding: 0.75rem 0;
+  }
+}

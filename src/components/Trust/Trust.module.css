@@ -1,0 +1,399 @@
+/* src/components/Trust/Trust.module.css */
+
+.trust {
+  position: relative;
+  padding: 5rem 2rem;
+  background: #ffffff;
+  border-top: 1px solid #f1f5f9;
+  border-bottom: 1px solid #f1f5f9;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  .trust {
+    background: #0f172a;
+    border-top-color: #1e293b;
+    border-bottom-color: #1e293b;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Initial Content */
+.initialContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.tagline {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #64748b;
+  text-align: center;
+  letter-spacing: -0.01em;
+  padding: 0.75rem 1.5rem;
+  background: #f8fafc;
+  border-radius: 9999px;
+  border: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tagline {
+    color: #94a3b8;
+    background: #1e293b;
+    border-color: #334155;
+  }
+}
+
+/* Trusted Section */
+.trustedSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.trustedHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.trustedLabel {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .trustedLabel {
+    color: #f8fafc;
+  }
+}
+
+.trustedCount {
+  font-size: 0.875rem;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 0.375rem 1rem;
+  border-radius: 9999px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .trustedCount {
+    color: #94a3b8;
+    background: #1e293b;
+  }
+}
+
+/* Client Grid - Text/Color Version */
+.clientGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.clientCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.clientCard:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .clientCard {
+    background: #1e293b;
+    border-color: #334155;
+  }
+  .clientCard:hover {
+    background: #263548;
+    border-color: #475569;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.clientLogoWrapper {
+  flex-shrink: 0;
+}
+
+.clientLogoPlaceholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.clientCard:hover .clientLogoPlaceholder {
+  transform: scale(1.05);
+}
+
+.clientInitial {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.clientInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.clientName {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .clientName {
+    color: #f8fafc;
+  }
+}
+
+.clientIndustry {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Client Grid - Image Version (Alternative) */
+.clientGridImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.clientImageCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.clientImageCard:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+  .clientImageCard {
+    background: #1e293b;
+    border-color: #334155;
+  }
+  .clientImageCard:hover {
+    background: #263548;
+    border-color: #475569;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.clientImageWrapper {
+  width: 64px;
+  height: 64px;
+}
+
+.clientImagePlaceholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.clientImageName {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .clientImageName {
+    color: #f8fafc;
+  }
+}
+
+/* Trust Indicators */
+.trustIndicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+  margin-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .trustIndicators {
+    border-top-color: #1e293b;
+  }
+}
+
+.indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.indicatorNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .indicatorNumber {
+    color: #f8fafc;
+  }
+}
+
+.indicatorLabel {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .indicatorLabel {
+    color: #94a3b8;
+  }
+}
+
+.indicatorDivider {
+  width: 1px;
+  height: 2.5rem;
+  background: #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .indicatorDivider {
+    background: #1e293b;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .clientGrid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .trust {
+    padding: 3rem 1.5rem;
+  }
+
+  .container {
+    gap: 2rem;
+  }
+
+  .tagline {
+    font-size: 0.9375rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .trustedLabel {
+    font-size: 1.5rem;
+  }
+
+  .trustedHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .clientGrid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .clientCard {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .clientLogoPlaceholder {
+    width: 36px;
+    height: 36px;
+  }
+
+  .clientInitial {
+    font-size: 1rem;
+  }
+
+  .trustIndicators {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .indicatorDivider {
+    width: 2rem;
+    height: 1px;
+  }
+
+  .indicatorNumber {
+    font-size: 1.25rem;
+  }
+
+  .clientGridImages {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .clientGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clientCard {
+    padding: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .clientLogoPlaceholder {
+    width: 32px;
+    height: 32px;
+  }
+}

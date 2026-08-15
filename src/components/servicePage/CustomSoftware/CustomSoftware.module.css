@@ -1,0 +1,508 @@
+/* src/components/CustomSoftware/CustomSoftware.module.css */
+
+.customSoftware {
+  position: relative;
+  padding: 5rem 2rem;
+  background: #0f172a;
+  overflow: hidden;
+}
+
+/* Background Glows */
+.bgGlow1 {
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.bgGlow2 {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+/* Grid Pattern */
+.gridPattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 540px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 1rem;
+  background: rgba(14, 165, 233, 0.12);
+  color: #0ea5e9;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  width: fit-content;
+  border: 1px solid rgba(14, 165, 233, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  background: #0ea5e9;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.6); }
+}
+
+.heading {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.headingHighlight {
+  color: #0ea5e9;
+}
+
+.description {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #94a3b8;
+}
+
+/* Software Types */
+.softwareTypes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.softwareTypeItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.softwareTypeDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #0ea5e9;
+  flex-shrink: 0;
+}
+
+.softwareTypeText {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+/* Technology Section */
+.techSection {
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.techLabel {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.techTag {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.techSeparator {
+  color: #475569;
+  margin: 0 0.25rem;
+}
+
+/* CTA Button */
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.875rem 2rem;
+  background: #0ea5e9;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(14, 165, 233, 0.2);
+  width: fit-content;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(14, 165, 233, 0.3);
+  background: #0284c7;
+}
+
+/* Right Visual */
+.visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualContainer {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  min-height: 400px;
+}
+
+/* Transformation Flow */
+.flowContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.flowStep {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.flowStep:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.flowStep .flowLine {
+  position: absolute;
+  bottom: -8px;
+  left: 32px;
+  width: 2px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.flowIcon {
+  font-size: 1.25rem;
+  width: 32px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.flowLabel {
+  font-size: 0.9375rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Highlighted Steps */
+.flowStepHighlight {
+  background: rgba(14, 165, 233, 0.06);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+  margin: 0 -0.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.flowStepHighlight .flowLabel {
+  color: #0ea5e9;
+}
+
+.flowStepFinal {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(139, 92, 246, 0.05));
+  border: 1px solid rgba(14, 165, 233, 0.15);
+  margin: 0 -0.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.flowStepFinal .flowLabel {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Floating Cards */
+.floatingCard1,
+.floatingCard2,
+.floatingCard3 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(30, 41, 59, 0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 4;
+}
+
+.floatingCard1 {
+  top: 5%;
+  right: -10%;
+}
+
+.floatingCard2 {
+  bottom: 20%;
+  left: -12%;
+}
+
+.floatingCard3 {
+  top: 45%;
+  right: -15%;
+}
+
+.floatingIcon {
+  font-size: 0.875rem;
+}
+
+.floatingText {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #f8fafc;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    gap: 3rem;
+  }
+
+  .visualContainer {
+    min-height: 350px;
+  }
+
+  .floatingCard1 {
+    right: -5%;
+  }
+
+  .floatingCard2 {
+    left: -5%;
+  }
+
+  .floatingCard3 {
+    right: -8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .customSoftware {
+    padding: 4rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .softwareTypes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .softwareTypeText {
+    font-size: 0.8125rem;
+  }
+
+  .visualContainer {
+    min-height: 320px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .floatingCard1,
+  .floatingCard2,
+  .floatingCard3 {
+    display: none;
+  }
+
+  .flowContainer {
+    padding: 1rem;
+  }
+
+  .flowStep {
+    padding: 0.625rem 0.75rem;
+  }
+
+  .flowStepHighlight,
+  .flowStepFinal {
+    padding: 0.625rem 1rem;
+    margin: 0;
+  }
+
+  .flowIcon {
+    font-size: 1.125rem;
+    width: 28px;
+  }
+
+  .flowLabel {
+    font-size: 0.875rem;
+  }
+
+  .ctaButton {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .customSoftware {
+    padding: 3rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .badge {
+    font-size: 0.6875rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .description {
+    font-size: 0.9375rem;
+  }
+
+  .softwareTypes {
+    grid-template-columns: 1fr;
+    gap: 0.375rem;
+  }
+
+  .softwareTypeText {
+    font-size: 0.75rem;
+  }
+
+  .techTag {
+    font-size: 0.75rem;
+  }
+
+  .techSeparator {
+    margin: 0 0.125rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .visualContainer {
+    min-height: 280px;
+    max-width: 320px;
+  }
+
+  .flowContainer {
+    padding: 0.75rem;
+  }
+
+  .flowStep {
+    padding: 0.5rem 0.625rem;
+    gap: 0.75rem;
+  }
+
+  .flowStepHighlight,
+  .flowStepFinal {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .flowIcon {
+    font-size: 1rem;
+    width: 24px;
+  }
+
+  .flowLabel {
+    font-size: 0.8125rem;
+  }
+
+  .flowStep .flowLine {
+    left: 24px;
+    height: 12px;
+    bottom: -6px;
+  }
+
+  .bgGlow1 {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    right: -50px;
+  }
+
+  .bgGlow2 {
+    width: 250px;
+    height: 250px;
+    bottom: -100px;
+    left: -50px;
+  }
+}
