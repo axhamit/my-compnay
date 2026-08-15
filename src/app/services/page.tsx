@@ -7,9 +7,9 @@ import CustomService from '@/components/servicePage/CustomSoftware/CustomSoftwar
 import UiUXDesign from '@/components/servicePage/UXDesign/UXDesign'
 import Ecommerce from '@/components/servicePage/ECommerce/ECommerce'
 import DigitalGrowth from '@/components/servicePage/DigitalGrowth/DigitalGrowth'
-import HowWeWork from '@/components/ServicePage/HowWeWork/HowWeWork'
+import HowWeWork from '@/components/servicePage/HowWeWork/HowWeWork'
 import type { Metadata } from 'next'
-import FInalCTA from '@/components/ServicePage/FinalCTA/FinalCTA'
+import FinalCTA from '@/components/servicePage/FinalCTA/FinalCTA'
 import FAQ from '@/components/FAQ/FAQ'
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export default function ServicesPage() {
       <DigitalGrowth/>
       <HowWeWork/>
       <FAQ/>
-      <FInalCTA/>
+      <FinalCTA/>
       {/* Additional service sections will go here */}
     </main>
   )
