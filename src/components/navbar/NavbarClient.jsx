@@ -19,6 +19,22 @@ const navigation = [
 export default function NavbarClient() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [theme, setTheme] = useState('light')
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('studiox-theme')
+    const preferredTheme = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+
+    setTheme(preferredTheme)
+    document.documentElement.setAttribute('data-theme', preferredTheme)
+    document.documentElement.style.colorScheme = preferredTheme
+  }, [])
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    document.documentElement.style.colorScheme = theme
+    localStorage.setItem('studiox-theme', theme)
+  }, [theme])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,6 +55,10 @@ export default function NavbarClient() {
       document.body.style.overflow = 'unset'
     }
   }, [isMobileMenuOpen])
+
+  const toggleTheme = () => {
+    setTheme((currentTheme) => (currentTheme === 'dark' ? 'light' : 'dark'))
+  }
 
   return (
     <>
@@ -85,6 +105,16 @@ export default function NavbarClient() {
               </motion.div>
             ))}
           </div>
+
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className={styles.themeToggle}
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+          >
+            <span className={styles.themeToggleIcon}>{theme === 'dark' ? '☀' : '☾'}</span>
+            <span>{theme === 'dark' ? 'Light' : 'Dark'}</span>
+          </button>
 
           {/* CTA Button */}
           <motion.div
