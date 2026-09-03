@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './Navbar.module.css'
 
 const menuVariants = {
@@ -45,7 +46,14 @@ export default function MobileMenu({ navigation, onClose }) {
       <div className={styles.mobileMenuContent}>
         <div className={styles.mobileMenuHeader}>
           <Link href="/" className={styles.mobileLogo} onClick={onClose}>
-            Studio<span className={styles.logoHighlight}>X</span>
+            <Image
+              src="/file.svg"
+              alt="Digifu logo"
+              width={32}
+              height={32}
+              className={styles.mobileLogoImage}
+            />
+            <span>Digifu</span>
           </Link>
         </div>
 

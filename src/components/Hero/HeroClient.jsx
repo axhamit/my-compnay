@@ -127,7 +127,7 @@ export default function HeroClient() {
                     <span></span>
                     <span></span>
                   </div>
-                  <div className={styles.mockupUrl}>dashboard.studiox.com</div>
+                  <div className={styles.mockupUrl}>dashboard.digifu.com</div>
                 </div>
                 <div className={styles.mockupContent}>
                   {/* Dashboard Content */}
@@ -188,7 +188,7 @@ export default function HeroClient() {
                       <path d="M12 12L20 28L28 12" stroke="white" strokeWidth="3" strokeLinecap="round"/>
                     </svg>
                   </div>
-                  <div className={styles.mobileAppName}>StudioX</div>
+                  <div className={styles.mobileAppName}>Digifu</div>
                   <div className={styles.mobileMetrics}>
                     <div className={styles.mobileMetric}>
                       <span className={styles.mobileMetricValue}>4.9</span>

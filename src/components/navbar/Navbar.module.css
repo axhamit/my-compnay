@@ -51,9 +51,12 @@
   transform: scale(1.02);
 }
 
-.logoSvg {
-  width: 40px;
-  height: 40px;
+.logoImage {
+  display: block;
+  width: 160px;
+  height: auto;
+  aspect-ratio: 8 / 3;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
@@ -282,10 +285,18 @@
 }
 
 .mobileLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: #0f172a;
   text-decoration: none;
+}
+
+.mobileLogoImage {
+  width: 32px;
+  height: 32px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -468,9 +479,9 @@
     font-size: 1.25rem;
   }
 
-  .logoSvg {
-    width: 32px;
-    height: 32px;
+  .logoImage {
+    width: 128px;
+    height: auto;
   }
 }
 

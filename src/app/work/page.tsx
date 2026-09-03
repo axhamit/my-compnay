@@ -7,7 +7,7 @@ import WOrkCTA from '@/components/OurWork/WorkCTA/WorkCTA'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Our Work - StudioX',
+  title: 'Our Work - Digifu',
   description: 'Explore websites, applications and digital products we\'ve designed and built.',
 }
 

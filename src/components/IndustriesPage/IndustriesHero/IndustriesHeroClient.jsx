@@ -151,7 +151,7 @@ export default function IndustriesHeroClient() {
                         <path d="M9 9L15 21L21 9" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
                       </svg>
                     </div>
-                    <div className={styles.mobileAppName}>StudioX</div>
+                    <div className={styles.mobileAppName}>Digifu</div>
                     <div className={styles.mobileMetrics}>
                       <div className={styles.mobileMetric}>
                         <span className={styles.mobileValue}>4.9</span>

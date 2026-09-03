@@ -120,7 +120,7 @@ export default function ECommerceClient() {
                       <rect width="30" height="30" rx="8" fill="#0EA5E9"/>
                       <path d="M9 9L15 21L21 9" stroke="white" strokeWidth="2" strokeLinecap="round"/>
                     </svg>
-                    <span className={styles.shopName}>StudioX Store</span>
+                    <span className={styles.shopName}>Digifu Store</span>
                   </div>
                   <div className={styles.shopNav}>
                     <span className={styles.navItem}>Products</span>

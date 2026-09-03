@@ -13,7 +13,7 @@ import FinalCTA from '@/components/servicePage/FinalCTA/FinalCTA'
 import FAQ from '@/components/FAQ/FAQ'
 
 export const metadata: Metadata = {
-  title: 'Services - StudioX',
+  title: 'Services - Digifu',
   description: 'From strategy and UI/UX to web applications, mobile apps, custom software and digital growth.',
 }
 
