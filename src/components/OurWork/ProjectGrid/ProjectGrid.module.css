@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .projectGrid {
     background: #0f172a;
   }
@@ -34,7 +34,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -46,7 +46,7 @@
   margin: 0.25rem 0 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .subtitle {
     color: #94a3b8;
   }
@@ -68,7 +68,7 @@
   transition: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .projectCard {
     background: #1e293b;
     border-color: #334155;
@@ -80,7 +80,7 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .projectCard:hover {
     border-color: #475569;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -101,7 +101,7 @@
   background: #f1f5f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardImage {
     background: #0f172a;
   }
@@ -129,7 +129,7 @@
   transform: scale(1.02);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .imagePlaceholder {
     background: linear-gradient(135deg, #1e293b, #0f172a);
   }
@@ -172,7 +172,7 @@
   letter-spacing: 0.05em;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .categoryBadge {
     background: rgba(0, 0, 0, 0.7);
   }
@@ -193,7 +193,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .projectTitle {
     color: #f8fafc;
   }
@@ -205,7 +205,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .projectCategory {
     color: #94a3b8;
   }
@@ -228,7 +228,7 @@
   border: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .tag {
     background: #0f172a;
     color: #94a3b8;
@@ -253,7 +253,7 @@
   color: #0ea5e9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .viewLink {
     color: #f8fafc;
     border-top-color: #334155;

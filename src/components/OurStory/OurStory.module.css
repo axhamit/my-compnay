@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .story {
     background: #0f172a;
   }
@@ -59,7 +59,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -104,7 +104,7 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .imageWrapper {
     border-color: #334155;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -123,7 +123,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .imagePlaceholder {
     background: linear-gradient(135deg, #1e293b, #0f172a);
   }
@@ -180,7 +180,7 @@
   opacity: 0.6;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .placeholderText {
     color: #94a3b8;
   }
@@ -207,7 +207,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .paragraph {
     color: #94a3b8;
   }
@@ -219,7 +219,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .paragraph:first-child {
     color: #f8fafc;
   }
@@ -234,7 +234,7 @@
   border-top: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .timeline {
     border-top-color: #1e293b;
   }
@@ -260,7 +260,7 @@
   border: 2px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .timelineDot {
     background: #1e293b;
     border-color: #334155;
@@ -293,7 +293,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .timelineDescription {
     color: #94a3b8;
   }
@@ -309,7 +309,7 @@
   opacity: 0.5;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .timelineLine {
     background: #334155;
   }

@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .hero {
     background: #0f172a;
   }
@@ -88,7 +88,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -108,7 +108,7 @@
   color: #475569;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .description {
     color: #94a3b8;
   }
@@ -142,7 +142,7 @@
   background: #1e293b;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .primaryButton {
     background: #0ea5e9;
     box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
@@ -173,7 +173,7 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .secondaryButton {
     color: #f8fafc;
     border-color: #334155;
@@ -208,7 +208,7 @@
   transition: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mainCard {
     background: #1e293b;
     border-color: #334155;
@@ -232,7 +232,7 @@
   background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .imagePlaceholder {
     background: linear-gradient(135deg, #1e293b, #0f172a);
   }
@@ -257,7 +257,7 @@
   opacity: 0.6;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .imageLabel {
     color: #94a3b8;
   }
@@ -277,7 +277,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .floatingCard1,
   .floatingCard2,
   .floatingCard3 {
@@ -318,7 +318,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .floatingText {
     color: #f8fafc;
   }
@@ -352,7 +352,7 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statsContainer {
     background: #1e293b;
     border-color: #334155;
@@ -375,7 +375,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statValue {
     color: #f8fafc;
   }
@@ -386,7 +386,7 @@
   color: #64748b;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statLabel {
     color: #94a3b8;
   }
@@ -402,7 +402,7 @@
   background: #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statDivider {
     background: #334155;
   }

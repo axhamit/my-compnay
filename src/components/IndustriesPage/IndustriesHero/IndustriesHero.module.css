@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .industriesHero {
     background: #0f172a;
   }
@@ -28,7 +28,7 @@
   pointer-events: none;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .bgOrb {
     background: radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
   }
@@ -44,7 +44,7 @@
   pointer-events: none;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .bgGrid {
     background-image: 
       linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
@@ -113,7 +113,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -134,7 +134,7 @@
   max-width: 480px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .description {
     color: #94a3b8;
   }
@@ -160,7 +160,7 @@
   transition: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .industryItem {
     background: #1e293b;
     border-color: #334155;
@@ -183,7 +183,7 @@
   text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .industryName {
     color: #94a3b8;
   }
@@ -222,7 +222,7 @@
   z-index: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .collageCard1 {
     background: #1e293b;
     border-color: #334155;
@@ -239,7 +239,7 @@
   border-bottom: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardHeader {
     background: #0f172a;
     border-bottom-color: #334155;
@@ -281,7 +281,7 @@
   margin-bottom: 0.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardChart {
     background: #0f172a;
   }
@@ -323,7 +323,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statValue {
     color: #f8fafc;
   }
@@ -350,7 +350,7 @@
   z-index: 3;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .collageCard2 {
     background: #1e293b;
     border-color: #334155;
@@ -390,7 +390,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileAppName {
     color: #f8fafc;
   }
@@ -415,7 +415,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileValue {
     color: #f8fafc;
   }
@@ -440,7 +440,7 @@
   z-index: 1;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .collageCard3 {
     background: #1e293b;
     border-color: #334155;
@@ -463,7 +463,7 @@
   letter-spacing: 0.05em;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .analyticsTitle {
     color: #94a3b8;
   }
@@ -508,7 +508,7 @@
   z-index: 4;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .floatingBadge {
     background: rgba(30, 41, 59, 0.92);
     border-color: rgba(255, 255, 255, 0.05);
@@ -527,7 +527,7 @@
   white-space: nowrap;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .floatingText {
     color: #f8fafc;
   }

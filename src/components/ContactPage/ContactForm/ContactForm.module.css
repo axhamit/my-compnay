@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .contactForm {
     background: #0f172a;
   }
@@ -26,7 +26,7 @@
   border-radius: 50%;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .contactForm::before {
     background: radial-gradient(circle, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
   }
@@ -51,7 +51,7 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.02);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .grid {
     background: #1e293b;
     border-color: #334155;
@@ -74,7 +74,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .sectionTitle {
     color: #f8fafc;
   }
@@ -87,7 +87,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .sectionDescription {
     color: #94a3b8;
   }
@@ -140,7 +140,7 @@
   color: #0ea5e9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .contactValue {
     color: #f8fafc;
   }
@@ -158,7 +158,7 @@
   border-top: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .socialLinks {
     border-top-color: #334155;
   }
@@ -202,7 +202,7 @@
   height: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .socialIcon {
     background: #0f172a;
     color: #94a3b8;
@@ -244,7 +244,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .label {
     color: #f8fafc;
   }
@@ -279,7 +279,7 @@
   color: #94a3b8;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .input,
   .textarea {
     background: #0f172a;
@@ -321,7 +321,7 @@
   border-color: #cbd5e1;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .optionLabel {
     background: #0f172a;
     border-color: #334155;
@@ -344,7 +344,7 @@
   color: #475569;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .optionText {
     color: #94a3b8;
   }
@@ -452,7 +452,7 @@
   color: #991b1b;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .successMessage {
     background: rgba(34, 197, 94, 0.1);
     border-color: rgba(34, 197, 94, 0.3);
@@ -474,7 +474,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .submitButton {
     background: #0ea5e9;
     box-shadow: 0 4px 14px rgba(14, 165, 233, 0.25);

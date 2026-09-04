@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileDev {
     background: #0f172a;
   }
@@ -85,7 +85,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -101,7 +101,7 @@
   color: #475569;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .description {
     color: #94a3b8;
   }
@@ -134,7 +134,7 @@
   color: #475569;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .capabilityText {
     color: #94a3b8;
   }
@@ -146,7 +146,7 @@
   border-top: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .techSection {
     border-top-color: #334155;
   }
@@ -175,7 +175,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .techTag {
     color: #f8fafc;
   }
@@ -186,7 +186,7 @@
   margin: 0 0.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .techSeparator {
     color: #475569;
   }
@@ -214,7 +214,7 @@
   background: #1e293b;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .ctaButton {
     background: #0ea5e9;
     box-shadow: 0 4px 14px rgba(14, 165, 233, 0.25);
@@ -267,7 +267,7 @@
   border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .phoneFrame {
     background: #1e293b;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -284,7 +284,7 @@
   z-index: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .phoneNotch {
     background: #1e293b;
   }
@@ -298,7 +298,7 @@
   position: relative;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .phoneScreen {
     background: #0f172a;
   }
@@ -312,7 +312,7 @@
   border-bottom: 1px solid #f1f5f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appHeader {
     border-bottom-color: #1e293b;
   }
@@ -330,7 +330,7 @@
   border-radius: 4px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appBack {
     background: #334155;
   }
@@ -348,7 +348,7 @@
   border-radius: 50%;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appMore {
     background: #334155;
   }
@@ -391,7 +391,7 @@
 .appNameLine:first-child { width: 60%; }
 .appNameLine:last-child { width: 40%; }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appNameLine {
     background: #334155;
   }
@@ -413,7 +413,7 @@
   align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appCard {
     background: #1e293b;
     border-color: #334155;
@@ -444,7 +444,7 @@
 .appCardLine:first-child { width: 70%; }
 .appCardLine:last-child { width: 50%; }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appCardLine {
     background: #475569;
   }
@@ -457,7 +457,7 @@
   border: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appChart {
     background: #1e293b;
     border-color: #334155;
@@ -497,7 +497,7 @@
   border-radius: 6px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appListItem {
     background: #1e293b;
   }
@@ -527,7 +527,7 @@
 .appListLine:first-child { width: 70%; }
 .appListLine:last-child { width: 50%; }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appListLine {
     background: #475569;
   }
@@ -540,7 +540,7 @@
   border-top: 1px solid #f1f5f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appBottomNav {
     border-top-color: #1e293b;
   }
@@ -553,7 +553,7 @@
   border-radius: 50%;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .appNavItem {
     background: #334155;
   }
@@ -577,7 +577,7 @@
   z-index: 4;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .floatingBadge1,
   .floatingBadge2 {
     background: rgba(30, 41, 59, 0.92);
@@ -607,7 +607,7 @@
   white-space: nowrap;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .badgeText {
     color: #f8fafc;
   }

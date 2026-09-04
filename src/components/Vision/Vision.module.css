@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .vision {
     background: #0f172a;
   }
@@ -52,7 +52,7 @@
   background-size: 50px 50px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .gridPattern {
     background-image: 
       linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
@@ -98,7 +98,7 @@
   width: fit-content;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .label {
     background: rgba(14, 165, 233, 0.08);
     border-color: rgba(14, 165, 233, 0.12);
@@ -127,7 +127,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statement {
     color: #f8fafc;
   }
@@ -174,7 +174,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .pointCard {
     background: #1e293b;
     border-color: #334155;
@@ -198,7 +198,7 @@
   flex-shrink: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .pointIconWrapper {
     background: rgba(14, 165, 233, 0.12);
   }
@@ -219,7 +219,7 @@
   margin: 0 0 0.125rem 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .pointTitle {
     color: #f8fafc;
   }
@@ -232,7 +232,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .pointDescription {
     color: #94a3b8;
   }

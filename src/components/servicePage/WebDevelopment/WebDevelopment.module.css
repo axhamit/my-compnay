@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .webDev {
     background: #0f172a;
   }
@@ -86,7 +86,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -102,7 +102,7 @@
   color: #475569;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .description {
     color: #94a3b8;
   }
@@ -135,7 +135,7 @@
   color: #475569;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .webTypeText {
     color: #94a3b8;
   }
@@ -147,7 +147,7 @@
   border-top: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .techSection {
     border-top-color: #334155;
   }
@@ -176,7 +176,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .techTag {
     color: #f8fafc;
   }
@@ -187,7 +187,7 @@
   margin: 0 0.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .techSeparator {
     color: #475569;
   }
@@ -209,7 +209,7 @@
   color: #0ea5e9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .exploreLink {
     color: #f8fafc;
   }
@@ -241,7 +241,7 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .screenshotCard {
     background: #1e293b;
     border-color: #334155;
@@ -258,7 +258,7 @@
   border-bottom: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .screenshotHeader {
     background: #0f172a;
     border-bottom-color: #334155;
@@ -303,7 +303,7 @@
   min-height: 280px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .dashboardUI {
     background: #0f172a;
     border-color: #334155;
@@ -322,7 +322,7 @@
   flex-shrink: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .dashboardSidebar {
     background: #1e293b;
     border-right-color: #334155;
@@ -351,7 +351,7 @@
 .sidebarItem:nth-child(2) { opacity: 0.7; }
 .sidebarItem:nth-child(3) { opacity: 0.9; }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .sidebarItem {
     background: #475569;
   }
@@ -378,7 +378,7 @@
   border-radius: 6px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .dashboardSearch {
     background: #1e293b;
   }
@@ -391,7 +391,7 @@
   background: #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .dashboardUser {
     background: #334155;
   }
@@ -413,7 +413,7 @@
   gap: 0.125rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statCard {
     background: #1e293b;
     border-color: #334155;
@@ -434,7 +434,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statCardValue {
     color: #f8fafc;
   }
@@ -447,7 +447,7 @@
   border: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .dashboardChart {
     background: #1e293b;
     border-color: #334155;
@@ -488,7 +488,7 @@
   z-index: 4;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .floatingCard1,
   .floatingCard2 {
     background: rgba(30, 41, 59, 0.92);
@@ -518,7 +518,7 @@
   white-space: nowrap;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .floatingText {
     color: #f8fafc;
   }

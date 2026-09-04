@@ -255,7 +255,7 @@
   box-shadow: -20px 0 60px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileMenu {
     background: #0f172a;
     box-shadow: -20px 0 60px rgba(0, 0, 0, 0.4);
@@ -278,7 +278,7 @@
   margin-bottom: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileMenuHeader {
     border-bottom-color: #1e293b;
   }
@@ -299,7 +299,7 @@
   height: 32px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileLogo {
     color: #f8fafc;
   }
@@ -330,7 +330,7 @@
   letter-spacing: -0.02em;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileNavItem a {
     color: #f8fafc;
   }
@@ -341,7 +341,7 @@
   transform: translateX(4px);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileNavItem a:hover {
     background: #1e293b;
   }
@@ -365,7 +365,7 @@
   border-top: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileCta {
     border-top-color: #1e293b;
   }
@@ -387,7 +387,7 @@
   transition: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileCtaButton {
     background: #0ea5e9;
   }
@@ -417,7 +417,7 @@
   border-top: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileSocial {
     border-top-color: #1e293b;
   }
@@ -431,7 +431,7 @@
   transition: color 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileSocial a {
     color: #94a3b8;
   }
@@ -441,7 +441,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileSocial a:hover {
     color: #f8fafc;
   }
@@ -506,7 +506,7 @@
   border-radius: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileMenu::-webkit-scrollbar-thumb {
     background: #334155;
   }

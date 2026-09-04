@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .team {
     background: #0f172a;
   }
@@ -63,7 +63,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -85,7 +85,7 @@
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .subtitle {
     color: #94a3b8;
   }
@@ -120,7 +120,7 @@
   margin-left: 0.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .teamCard {
     background: #1e293b;
     border-color: #334155;
@@ -136,7 +136,7 @@
   border-color: #cbd5e1;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .teamCard:hover {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     border-color: #475569;
@@ -156,7 +156,7 @@
   background: #f1f5f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .photoWrapper {
     background: #0f172a;
   }
@@ -187,7 +187,7 @@
   background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .photoPlaceholder {
     background: linear-gradient(135deg, #1e293b, #0f172a);
   }
@@ -240,7 +240,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .memberName {
     color: #f8fafc;
   }
@@ -264,7 +264,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .memberBio {
     color: #94a3b8;
   }
@@ -287,7 +287,7 @@
   color: #475569;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .expertiseTag {
     background: #0f172a;
     color: #94a3b8;
@@ -321,7 +321,7 @@
   transform: translateY(-2px);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .socialLink {
     background: #0f172a;
     color: #94a3b8;
@@ -351,7 +351,7 @@
   border: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .note {
     background: #1e293b;
     border-color: #334155;
@@ -375,7 +375,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .noteText {
     color: #94a3b8;
   }
