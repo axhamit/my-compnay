@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .belief {
     background: #0f172a;
   }
@@ -75,7 +75,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -115,7 +115,7 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .principleCard {
     background: #1e293b;
     border-color: #334155;
@@ -177,7 +177,7 @@
   flex: 1;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .principleDescription {
     color: #94a3b8;
   }

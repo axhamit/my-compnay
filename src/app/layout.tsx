@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "StudioX - Digital Design Agency",
+  title: "Digifu - Digital Design Agency",
   description: "We create beautiful digital experiences that drive results",
 };
 

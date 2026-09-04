@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .hero {
     background: #0f172a;
   }
@@ -39,7 +39,7 @@
   pointer-events: none;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .bgOrb1 {
     background: radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
   }
@@ -109,7 +109,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -127,7 +127,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .headingSub {
     color: #f8fafc;
   }
@@ -140,7 +140,7 @@
   max-width: 520px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .description {
     color: #94a3b8;
   }
@@ -185,7 +185,7 @@
   transform: translateX(4px);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .primaryButton {
     background: #0ea5e9;
     box-shadow: 0 4px 14px rgba(14, 165, 233, 0.25);
@@ -226,7 +226,7 @@
   transform: translateX(4px);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .secondaryButton {
     color: #f8fafc;
     border-color: #334155;
@@ -263,7 +263,7 @@
   z-index: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .dashboardCard {
     background: #1e293b;
     border-color: #334155;
@@ -279,7 +279,7 @@
   border-bottom: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .dashboardHeader {
     background: #0f172a;
     border-bottom-color: #334155;
@@ -336,7 +336,7 @@
   margin-bottom: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .chartArea {
     background: #0f172a;
   }
@@ -371,7 +371,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .chartValue {
     color: #f8fafc;
   }
@@ -415,7 +415,7 @@
   border-bottom: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statsRow {
     border-top-color: #334155;
     border-bottom-color: #334155;
@@ -434,7 +434,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statNumber {
     color: #f8fafc;
   }
@@ -453,7 +453,7 @@
   background: #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statDivider {
     background: #334155;
   }
@@ -485,7 +485,7 @@
 .avatar:nth-child(3) { background: linear-gradient(135deg, #ec4899, #db2777); }
 .avatar:nth-child(4) { background: linear-gradient(135deg, #f59e0b, #d97706); }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .avatar {
     border-color: #1e293b;
   }
@@ -506,7 +506,7 @@
   margin-right: -8px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .avatarPlus {
     background: #334155;
     color: #94a3b8;
@@ -533,7 +533,7 @@
   z-index: 3;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileCard {
     background: #1e293b;
     border-color: #334155;
@@ -574,7 +574,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileAppName {
     color: #f8fafc;
   }
@@ -599,7 +599,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileValue {
     color: #f8fafc;
   }
@@ -628,7 +628,7 @@
   background: #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .mobileBtn:last-child {
     background: #334155;
   }
@@ -651,7 +651,7 @@
   z-index: 4;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .floatingBadge1,
   .floatingBadge2,
   .floatingBadge3 {
@@ -687,7 +687,7 @@
   white-space: nowrap;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .badgeText {
     color: #f8fafc;
   }

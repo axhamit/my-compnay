@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cta {
     background: #0f172a;
   }
@@ -27,7 +27,7 @@
   border-radius: 50%;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cta::before {
     background: radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
   }
@@ -56,7 +56,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -68,7 +68,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .description {
     color: #94a3b8;
   }
@@ -95,7 +95,7 @@
   background: #1e293b;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .ctaButton {
     background: #0ea5e9;
     box-shadow: 0 4px 14px rgba(14, 165, 233, 0.25);

@@ -6,7 +6,7 @@ import FAQClint from '@/components/ProcessPage/FAQ/FAQ'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Our Process - StudioX',
+  title: 'Our Process - Digifu',
   description: 'A clear and collaborative process designed to turn your idea into a reliable digital product.',
 }
 

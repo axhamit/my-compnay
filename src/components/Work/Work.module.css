@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .work {
     background: #0f172a;
   }
@@ -97,7 +97,7 @@
   margin-bottom: 0.75rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .title {
     color: #f8fafc;
   }
@@ -131,7 +131,7 @@
   max-width: 520px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .subtitle {
     color: #94a3b8;
   }
@@ -171,7 +171,7 @@
   transform: translateX(4px);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .viewAllLink {
     color: #f8fafc;
     border-color: #334155;
@@ -214,7 +214,7 @@
   transition: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .premiumCard {
     background: #1e293b;
     border-color: #334155;
@@ -227,7 +227,7 @@
   transform: translateY(-2px);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .premiumCard:hover {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   }
@@ -410,7 +410,7 @@
   background: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardContent {
     background: #1e293b;
   }
@@ -438,7 +438,7 @@
   line-height: 1.2;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardTitle {
     color: #f8fafc;
   }
@@ -451,7 +451,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardDescription {
     color: #94a3b8;
   }
@@ -467,7 +467,7 @@
   border: 1px solid #f1f5f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardDetails {
     background: #0f172a;
     border-color: #1e293b;
@@ -494,7 +494,7 @@
   line-height: 1.4;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .detailValue {
     color: #f8fafc;
   }
@@ -521,7 +521,7 @@
   transform: translateY(-1px);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardTag {
     background: #0f172a;
     color: #94a3b8;
@@ -536,7 +536,7 @@
   border-top: 1px solid #f1f5f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardFooter {
     border-top-color: #1e293b;
   }
@@ -568,7 +568,7 @@
   transform: translateX(4px);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .caseStudyLink {
     color: #f8fafc;
   }
@@ -630,7 +630,7 @@
   height: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .arrowBtn {
     background: #1e293b;
     border-color: #334155;
@@ -664,7 +664,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .dot {
     background: #334155;
   }
@@ -715,7 +715,7 @@
   font-size: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .counterCurrent {
     color: #f8fafc;
   }

@@ -113,7 +113,7 @@ export default function WebDevelopmentClient() {
                     <span></span>
                     <span></span>
                   </div>
-                  <div className={styles.screenshotUrl}>app.studiox.com/dashboard</div>
+                  <div className={styles.screenshotUrl}>app.digifu.com/dashboard</div>
                 </div>
                 <div className={styles.screenshotBody}>
                   {/* Dashboard UI */}

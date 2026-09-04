@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .contactInfo {
     background: #0f172a;
   }
@@ -26,7 +26,7 @@
   border-radius: 50%;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .contactInfo::before {
     background: radial-gradient(circle, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
   }
@@ -55,7 +55,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -86,7 +86,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .infoItem {
     background: #1e293b;
     border-color: #334155;
@@ -142,7 +142,7 @@
   color: #0ea5e9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .infoValue {
     color: #f8fafc;
   }
@@ -163,7 +163,7 @@
   max-width: 650px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .socialSection {
     border-top-color: #334155;
   }
@@ -211,7 +211,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .socialLink {
     background: #1e293b;
     color: #94a3b8;

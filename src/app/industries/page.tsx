@@ -6,7 +6,7 @@ import IndustriesCTA from '@/components/IndustriesPage/IndustriesCTA/IndustriesC
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Industries - StudioX',
+  title: 'Industries - Digifu',
   description: 'We create digital products and software solutions tailored to the unique needs of different businesses.',
 }
 

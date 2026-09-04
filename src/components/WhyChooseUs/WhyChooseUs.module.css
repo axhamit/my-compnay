@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .whyChooseUs {
     background: #0f172a;
   }
@@ -76,7 +76,7 @@
   margin-bottom: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .title {
     color: #f8fafc;
   }
@@ -98,7 +98,7 @@
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .subtitle {
     color: #94a3b8;
   }
@@ -123,7 +123,7 @@
   cursor: default;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .card {
     background: #1e293b;
     border-color: #334155;
@@ -136,7 +136,7 @@
   border-color: #cbd5e1;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .card:hover {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     border-color: #475569;
@@ -159,7 +159,7 @@
   line-height: 1;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .number {
     color: #334155;
   }
@@ -172,7 +172,7 @@
   transition: width 0.6s ease;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .numberLine {
     background: #334155;
   }
@@ -211,7 +211,7 @@
   letter-spacing: -0.01em;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .title {
     color: #f8fafc;
   }
@@ -225,7 +225,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .description {
     color: #94a3b8;
   }
@@ -255,7 +255,7 @@
   opacity: 1;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .benefitItem {
     color: #94a3b8;
   }
@@ -284,7 +284,7 @@
   font-style: italic;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .statText {
     color: #f8fafc;
   }
@@ -310,7 +310,7 @@
   border: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .trustBadge {
     background: #1e293b;
     border-color: #334155;
@@ -344,7 +344,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .badgeRating {
     color: #f8fafc;
   }
@@ -356,7 +356,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .badgeNumber {
     color: #f8fafc;
   }
@@ -367,7 +367,7 @@
   color: #64748b;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .badgeLabel {
     color: #94a3b8;
   }
@@ -379,7 +379,7 @@
   background: #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .badgeDivider {
     background: #334155;
   }

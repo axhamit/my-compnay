@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .process {
     background: #0f172a;
   }
@@ -64,7 +64,7 @@
   margin-bottom: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .title {
     color: #f8fafc;
   }
@@ -86,7 +86,7 @@
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .subtitle {
     color: #94a3b8;
   }
@@ -123,7 +123,7 @@
   z-index: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .connectionLine {
     background: #334155;
   }
@@ -140,7 +140,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .stepCard {
     background: #1e293b;
     border-color: #334155;
@@ -151,7 +151,7 @@
   border-color: #cbd5e1;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .stepCard:hover {
     border-color: #475569;
   }
@@ -248,7 +248,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .stepDescription {
     color: #94a3b8;
   }
@@ -334,7 +334,7 @@
   background: #1e293b;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .ctaButton {
     background: #0ea5e9;
     box-shadow: 0 4px 20px rgba(14, 165, 233, 0.3);

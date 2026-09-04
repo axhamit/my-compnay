@@ -89,7 +89,7 @@ export default function ServicesHeroClient() {
                     <span></span>
                     <span></span>
                   </div>
-                  <div className={styles.dashboardUrl}>dashboard.studiox.com</div>
+                  <div className={styles.dashboardUrl}>dashboard.digifu.com</div>
                   <div className={styles.dashboardActions}>
                     <span className={styles.actionDot}></span>
                   </div>
@@ -170,7 +170,7 @@ export default function ServicesHeroClient() {
                       <path d="M12 12L20 28L28 12" stroke="white" strokeWidth="3" strokeLinecap="round"/>
                     </svg>
                   </div>
-                  <div className={styles.mobileAppName}>StudioX</div>
+                  <div className={styles.mobileAppName}>Digifu</div>
                   <div className={styles.mobileMetrics}>
                     <div className={styles.mobileMetric}>
                       <span className={styles.mobileValue}>4.9</span>

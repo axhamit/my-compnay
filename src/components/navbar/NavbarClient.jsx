@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import MobileMenu from './MobileMenu'
 import NavLink from './NavLink'
@@ -54,19 +55,16 @@ export default function NavbarClient() {
             className={styles.logoContainer}
           >
             <Link href="/" className={styles.logo}>
-              <svg 
-                className={styles.logoSvg}
-                viewBox="0 0 40 40" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="40" height="40" rx="12" fill="#0EA5E9"/>
-                <path d="M12 12L20 28L28 12" stroke="white" strokeWidth="3" strokeLinecap="round"/>
-                <circle cx="20" cy="20" r="16" stroke="white" strokeWidth="2" opacity="0.3"/>
-              </svg>
-              <span className={styles.logoText}>
-                Studio<span className={styles.logoHighlight}>X</span>
-              </span>
+              <Image
+                src="/digiFu.png"
+                alt="Digifu logo"
+                width={160}
+                height={60}
+                className={styles.logoImage}
+              />
+              {/* <span className={styles.logoText}>
+                Digifu
+              </span> */}
             </Link>
           </motion.div>
 

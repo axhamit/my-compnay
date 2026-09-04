@@ -80,7 +80,7 @@ export default function FooterClient() {
                 <circle cx="20" cy="20" r="16" stroke="white" strokeWidth="2" opacity="0.3"/>
               </svg>
               <span className={styles.logoText}>
-                Studio<span className={styles.logoHighlight}>X</span>
+                Digifu
               </span>
             </Link>
             
@@ -230,7 +230,7 @@ export default function FooterClient() {
         <div className={styles.bottomSection}>
           <div className={styles.bottomContent}>
             <span className={styles.copyright}>
-              © {currentYear} StudioX. All rights reserved.
+              © {currentYear} Digifu. All rights reserved.
             </span>
             <div className={styles.legalLinks}>
               <Link href="/privacy" className={styles.legalLink}>

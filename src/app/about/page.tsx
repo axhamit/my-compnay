@@ -17,7 +17,7 @@ import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs'
 import FinalCTA from '@/components/FinalCTA/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'About Us - StudioX',
+  title: 'About Us - Digifu',
   description: 'We are a technology and digital product company helping businesses turn ideas into reliable, scalable and beautiful digital experiences.',
 }
 

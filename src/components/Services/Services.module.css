@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .services {
     background: #0f172a;
   }
@@ -60,7 +60,7 @@
   margin-bottom: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .title {
     color: #f8fafc;
   }
@@ -91,7 +91,7 @@
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .subtitle {
     color: #94a3b8;
   }
@@ -120,7 +120,7 @@
   cursor: default;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .card {
     background: #1e293b;
     border-color: #334155;
@@ -132,7 +132,7 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .card:hover {
     border-color: #475569;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
@@ -179,7 +179,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardTitle {
     color: #f8fafc;
   }
@@ -213,7 +213,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardDescription {
     color: #94a3b8;
   }
@@ -237,7 +237,7 @@
   color: #475569;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardFeature {
     color: #94a3b8;
   }
@@ -266,7 +266,7 @@
   width: fit-content;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .cardLink {
     color: #f8fafc;
     border-top-color: #334155;
@@ -284,7 +284,7 @@
   border-top: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .bottomCTA {
     border-top-color: #1e293b;
   }
@@ -297,7 +297,7 @@
   margin-bottom: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .ctaText {
     color: #f8fafc;
   }
@@ -324,7 +324,7 @@
   background: #1e293b;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .ctaButton {
     background: #0ea5e9;
     box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);

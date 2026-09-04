@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .values {
     background: #0f172a;
   }
@@ -50,7 +50,7 @@
   color: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .heading {
     color: #f8fafc;
   }
@@ -72,7 +72,7 @@
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .subtitle {
     color: #94a3b8;
   }
@@ -98,7 +98,7 @@
   transform: translateX(-50%);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .centerLine {
     background: #334155;
   }
@@ -153,7 +153,7 @@
   z-index: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .nodeDot {
     border-color: #0f172a;
     background: #334155;
@@ -181,7 +181,7 @@
   min-height: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .valueCard {
     background: #1e293b;
     border-color: #334155;
@@ -193,7 +193,7 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .valueCard:hover {
     border-color: #475569;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
@@ -205,7 +205,7 @@
   box-shadow: 0 8px 30px rgba(14, 165, 233, 0.08);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .valueCard.hovered {
     border-color: #0ea5e9;
     box-shadow: 0 8px 30px rgba(14, 165, 233, 0.12);
@@ -237,7 +237,7 @@
   letter-spacing: -0.01em;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .valueTitle {
     color: #f8fafc;
   }
@@ -250,7 +250,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .valueDescription {
     color: #94a3b8;
   }
@@ -271,7 +271,7 @@
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .valueLongDescription p {
     color: #94a3b8;
   }
@@ -293,7 +293,7 @@
   border: 1px solid #e2e8f0;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .exampleTag {
     background: #0f172a;
     color: #94a3b8;
@@ -437,7 +437,7 @@
   box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.15);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 99999px) {
   .timelineItem:hover .nodeDot {
     box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
   }
